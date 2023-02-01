@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+  </style>
+  <title>DNC Coffee</title>
+</head>
+
+<body style="background-color:#F6F5FB">
+  <nav class="navbar navbar-expand-lg shadow-sm nav">
+    <div class="container-fluid img">
+      <a class="navbar-brand" href="#">
+        <img src="images/logo.png" width="200px" alt="Logo" width="30" class="d-inline-block align-text-top">
+
+      </a>
+      <div class="navbar-collapse navbar-expand-sm links">
+        <ul class="navbar-nav">
+          <li class="nav-item ps-3">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item ps-3">
+            <a onclick="Sobre()" class="nav-link" id="sobre" href="#" data-bs-toggle="modal"
+              data-bs-target="#sobre">Sobre</a>
+          </li>
+          <li class="nav-item ps-3">
+            <a onclick="Atendimento()" class="nav-link" id="atendimento" href="#">Atendimento</a>
+          </li>
+        </ul>
+      </div>
+      <div class="d-flex pedido">
+        <a href="#" class="btn btn-outline-success rounded-pill btn1">
+          Fazer Pedido
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="container-fluid m-0 p-0">
+    <img src="images/banner.png" class="object-fit-none" width="100%" height="500">
+  </section>
+
+  <main class="card-group">
+    <article class="card m-3 border-1 rounded-2 ">
+
+      <div class="card-body" id="card-body1">
+        <img src="images/image1.png" height="150" class="card-img-top object-fit-none rounded-top" alt="...">
+        <p class="card-text ">Nossa loja de café se encontra em um lugar, 100% fictício, porém caso se sinta interessado
+          pode vir tomar um café conosco em nossa sede em São José dos Campos.
+
+        </p>
+
+        <button id="botao1" class="aparece">Comprar Agora</button>
+
+      </div>
+    </article>
+    <article class="card m-3 border-1 rounded-2 ">
+
+      <div class="card-body" id="card-body2">
+        <img src="images/image2.png" height="150" class="card-img-top object-fit-none rounded-top" alt="...">
+        <p class="card-text">Nossa casa de café é a melhor da região, aqui você tem tudo que precisa, uma boa conversar,
+          bons amigos e um ambiente sem igual. Aproveite, pois Melhor que a DNC não existe!
+
+        </p>
+        <button id="botao2" class="aparece">Comprar Agora</button>
+      </div>
+    </article>
+    <article class="card m-3 border-1 rounded-2 ">
+
+
+
+      <div class="card-body" id="card-body3">
+        <img src="images/image3.png" height="150" class="card-img-top object-fit-none rounded-top" alt="...">
+        <p class="card-text">Por que a DNC? Porque podem contar sempre com um serviço genuíno, uma atmosfera acolhedora
+          e uma incrível xícara de café, torrado por especialistas e preparado de forma enriquecedora.
+
+        </p>
+
+        <button id="botao3" class="aparece">Comprar Agora</button>
+
+      </div>
+
+    </article>
+    <article class="card m-3 border-1 rounded-2 ">
+
+      <div></div>
+      <div class="card-body" id="card-body4">
+        <img src="images/image4.png" height="150" class="card-img-top object-fit-none rounded-top" alt="...">
+        <p class="card-text">A escola especialista em formar talentos, com foco em empregabilidade, migração de carreira
+          e aumento de performance.
+
+        </p>
+
+        <button id="botao4" class="aparece">Comprar Agora</button>
+
+      </div>
+    </article>
+  </main>
+
+  <div class="modal" id="myModal" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content p-5">
+        <div>
+          <span id="span" class="close" onclick="Close()">&times;</span>
+
+        </div>
+        <h2 class="text-center fw-light">Quem somos nós? </h2>
+        <p class="p-3 fw-light text-center">Tudo o que fazemos procura respeitar essa conexão, desde nosso compromisso
+          com o café de melhor qualidade do mundo até a forma como nós interagimos com nossos clientes e nossas
+          comunidades para conduzir nosso negócio de modo responsável.
+        </p>
+
+        
+
+
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="myModal2">
+    <div class="modal-content p-5">
+      <div>
+        <span id="span" class="close" onclick="Close2()">&times;</span>
+      </div>
+      <h2 class="text-center fw-light">Atendimento</h2>
+      <p class="p-3 fw-light text-center">Rua José de Alencar, 111, Centro<br>
+        CEP: 12209-000 | +55 (11) 3333-8000
+      </p>
+      <div>
+        <button>ENTRAR EM CONTATO</button>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
